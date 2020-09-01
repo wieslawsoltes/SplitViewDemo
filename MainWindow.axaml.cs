@@ -38,11 +38,11 @@ namespace SplitViewDemo
             {
                 if (_splitView.DisplayMode == SplitViewDisplayMode.Inline)
                 {
-                    _pinButton.Content = _splitView.Resources["PinIcon"];
+                    _pinButton.Content = this.Resources["PinIcon"];
                 }
                 else if (_splitView.DisplayMode == SplitViewDisplayMode.CompactOverlay)
                 {
-                    _pinButton.Content = _splitView.Resources["PinOffIcon"];
+                    _pinButton.Content = this.Resources["PinOffIcon"];
                 }
             });
 
