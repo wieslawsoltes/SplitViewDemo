@@ -1,21 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.0-preview4" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.10.0-preview4" />
-    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0-preview4" />
-  </ItemGroup>
-  <ItemGroup>
-    <AvaloniaXaml Update="MainWindow.axaml">
-      <Generator>MSBuild:Compile</Generator>
-    </AvaloniaXaml>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.axaml</DependentUpon>
-    </Compile>
+    <PackageReference Include="Avalonia" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
   </ItemGroup>
 </Project>
